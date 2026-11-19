@@ -10,10 +10,10 @@ typedef struct {
 typedef struct {
 	Entry entries[CAPACITY];
 	size_t size;
-} Entry_list;
+} EntryList;
 
-void el_print(const Entry_list *list);
+void el_print();
 
-void el_set(Entry_list *list, const char* key, const char* val);
+void el_set(const char* key, const char* val);
 
-const char* el_get(const Entry_list *list, const char* key); 
+const char* el_get(const char* key); 
